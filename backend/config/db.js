@@ -5,8 +5,7 @@ const local = "mongodb://localhost:27017/Hotel";
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb+srv://hotel-admin:Mongo%402025@restroqr.mkvof.mongodb.net/?retryWrites=true&w=majority&appName=RestroQR&tls=true"
-      , {
+    await mongoose.connect(url, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

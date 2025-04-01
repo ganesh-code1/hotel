@@ -133,7 +133,9 @@ const TableStatus = () => {
           );
           return (
             <div key={table._id} className="table-card">
-              <img src="./src/assets/img/table.png" alt="Table" className="table-image" />
+              <div className="table-image-container">
+              <div className="table-image"></div>
+            </div>
               <div className="table-overlay">
                 <p><strong>Table No:</strong> {table.tableId}</p>
                 {activeOrder ? (
